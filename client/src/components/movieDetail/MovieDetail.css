@@ -41,6 +41,24 @@
   text-align: left;
 }
 
+.movie-detail .cast-list {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.movie-detail .actor {
+  padding-bottom: 5px;
+}
+
+.movie-detail .actor .name,
+.movie-detail .actor .character {
+  font-weight: 700;
+}
+
+.movie-detail .return-home {
+  padding-bottom: 20px;
+}
+
 .movie-detail .return-home:visited {
   color: rgb(0, 0, 238);
 }

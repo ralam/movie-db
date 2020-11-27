@@ -7,49 +7,51 @@
   margin: auto;
 }
 
-.search-bar {
+.Home .search-bar {
   flex: 1 0 100%;
   display: flex;
   margin: 50px 10px 20px;
 }
 
-.search-input {
+.Home .search-input {
   width: 80%;
 }
 
-.search-btn {
+.Home .search-btn {
   width: 20%;
 }
 
-.movie-list {
+.Home .movie-list {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 100%;
 }
 
-.movie {
+.Home .movie {
   flex-basis: 20%;
-  height: 200px;
+  height: 250px;
   display: grid;
+  box-sizing: border-box;
 }
 
-.movie-poster {
+.Home .movie:hover {
+  border: 2px solid lightblue;
+  border-radius: 2px;
+}
+
+.Home .movie-poster {
   height: 150px;
   width: 100px;
   margin: 10px auto 0;
 }
 
-.movie-poster.placeholder {
+.Home .movie-poster.placeholder {
   background-color: grey;
   text-align: center;
   line-height: 150px;
   color: white;
 }
 
-.movie-title {
-  margin: 10px;
-}
-
-.no-results {
+.Home .no-results {
   margin: 0 auto;
 }

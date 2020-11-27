@@ -49,6 +49,13 @@ app.get('/movie/:id', (req, res) => {
     .catch((err) => console.log(err));
 });
 
+app.get('/movie/:id/credits', (req, res) => {
+  const url = `${MOVIES_BASE_URL}/movie/${req.params.id}/credits`;
+  getUrl(url)
+    .then((data) => res.json(data))
+    .catch((err) => console.log(err));
+});
+
 const port = 8080;
 app.listen(port);
 console.log('App is listening on port ' + port);
