@@ -9,7 +9,6 @@ app.use(bodyParser.json());
 
 const MOVIES_BASE_URL = 'https://api.themoviedb.org/3';
 const API_KEY = process.env.MOVIE_DB_API_KEY;
-console.log(API_KEY);
 
 const getUrl = async (url, options) => {
   const response = await axios.get(url, {

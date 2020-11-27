@@ -1,0 +1,46 @@
+.container {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  justify-content: center;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.movie-detail {
+  flex-basis: 100%;
+  display: block;
+}
+
+.movie-detail .movie-poster {
+  height: 450px;
+  width: 300px;
+  margin: 10px auto 0;
+}
+
+.movie-detail .movie-poster.placeholder {
+  background-color: grey;
+  text-align: center;
+  line-height: 150px;
+  color: white;
+}
+
+.movie-detail .title {
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.movie-detail .release-date {
+  padding: 10px;
+}
+
+.movie-detail .summary {
+  padding: 10px;
+  text-align: left;
+}
+
+.movie-detail .return-home:visited {
+  color: rgb(0, 0, 238);
+}

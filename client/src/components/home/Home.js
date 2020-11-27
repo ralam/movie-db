@@ -1,7 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
-
-const POSTER_BASE_URL = 'https://image.tmdb.org/t/p/w200';
 
 class Home extends React.Component {
   constructor(props) {
@@ -50,11 +49,12 @@ class Home extends React.Component {
 
   render() {
     const { movies, searchInput } = this.state;
+    const POSTER_BASE_URL = 'https://image.tmdb.org/t/p/w200';
     let movieList;
     if (movies.length) {
       movieList = movies.map((movie) => {
         return (
-          <div className="movie" key={movie.id}>
+          <Link className="movie" key={movie.id} to={`/movie/${movie.id}`}>
             {movie.poster_path ? (
               <img
                 className="movie-poster"
@@ -63,8 +63,8 @@ class Home extends React.Component {
             ) : (
               <div className="movie-poster placeholder">No image</div>
             )}
-            <div className="movie-title">{movie.original_title}</div>
-          </div>
+            <div className="movie-title">{movie.title}</div>
+          </Link>
         );
       });
     } else if (searchInput) {
